@@ -1,12 +1,78 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Тихий Дон. Книга первая</title>
-    </head>
-    </body>
-        <frame src="https://feb-web.ru/feb/sholokh/texts/sh0/sh2/sh2-001-.htm?cmd=2"/>
-        <frame src="https://feb-web.ru/feb/sholokh/texts/sh0/sh2/sh2-005-.htm?cmd=2"/>
-        <frame src="https://feb-web.ru/feb/sholokh/texts/sh0/sh2/sh2-405-.htm?cmd=2"/>
-        <frame src="https://feb-web.ru/feb/sholokh/texts/sh0/sh2/sh2-414-.htm?cmd=2"/>
-        <frame src="https://feb-web.ru/feb/sholokh/texts/sh0/sh2/sh2-415-.htm?cmd=2"/>
-    </body>
+<head>
+    <style>
+        /* 设置外部容器的样式 */
+        .container {
+            height: 100vh; /* 设置容器高度为视口高度 */
+            overflow: hidden; /* 隐藏溢出内容 */
+        }
+
+        /* 设置每个页面的样式 */
+        .page {
+            height: 100vh; /* 设置每个页面的高度为视口高度 */
+            width: 100%; /* 设置每个页面的宽度为 100% */
+            display: flex; /* 使用 flex 布局 */
+            justify-content: center; /* 设置内容水平居中 */
+            align-items: center; /* 设置内容垂直居中 */
+            font-size: 24px; /* 设置字体大小 */
+        }
+        .external-file {
+            height: 100%; /* 设置每个外部文件的高度为 100% */
+            width: 100%; /* 设置每个外部文件的宽度为 100% */
+            border: none; /* 去除边框 */
+        }
+
+        /* 设置每个页面的背景颜色 */
+        #page1 {
+            background-color: #f1f1f1;
+        }
+
+        #page2 {
+            background-color: #e1e1e1;
+        }
+
+        #page3 {
+            background-color: #d1d1d1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="page1" class="page">
+            <!-- 第一个页面的内容 -->
+            <object class="external-file" data="https://feb-web.ru/feb/sholokh/texts/sh0/sh2/sh2-001-.htm?cmd=2"></object>
+        </div>
+        
+        <div id="page2" class="page">
+            <!-- 第二个页面的内容 -->
+            <object class="external-file" data="https://feb-web.ru/feb/sholokh/texts/sh0/sh2/sh2-414-.htm?cmd=2"></object>
+        </div>
+        
+        <div id="page3" class="page">
+            <!-- 第三个页面的内容 -->
+            <object class="external-file" data="https://feb-web.ru/feb/sholokh/texts/sh0/sh2/sh2-415-.htm?cmd=2"></object>
+        </div>
+    </div>
+
+    <script>
+        // 获取页面元素
+        const container = document.querySelector('.container');
+        const pages = document.querySelectorAll('.page');
+
+        // 设置容器高度为视口高度的倍数
+        container.style.height = `${pages.length * 100}vh`;
+
+        // 监听滚动事件
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+
+            // 根据滚动位置计算当前页面索引
+            const pageIndex = Math.round(scrollY / window.innerHeight);
+
+            // 设置容器滚动位置，以显示当前页面
+            container.style.transform = `translateY(-${pageIndex * 100}vh)`;
+        });
+    </script>
+</body>
 </html>
