@@ -5,7 +5,9 @@
         /* 设置外部容器的样式 */
         .container {
             height: 100vh; /* 设置容器高度为视口高度 */
-            overflow: hidden; /* 隐藏溢出内容 */
+            overflow-y: scroll; /* 允许纵向滚动 */
+            display: flex; /* 使用 flex 布局 */
+            flex-direction: column; /* 设置纵向排列 */
         }
         /* 设置每个页面的样式 */
         .page {
