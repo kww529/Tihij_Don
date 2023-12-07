@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
         <title>Тихий Дон. Книга первая.</title>
         <style>
             body        { background: #000000; color: #ffff00; }
-            a:link      { color: #ff0000; }
+            a:link      { color: #ff0000; text-decoration: underline; }
+            a:visited   { color: #ff00ff; text-decoration: underline; }
+            a:hover     { color: #ff0000; text-decoration: underline; }
+            a:active    { color: #ff00ff; text-decoration: underline; }
+            .footnotesnp        { margin-left: 20px; margin-right: 20px; font-size: 80%; }
+            .page-note  { font-size: 100%; font-style: italic; border-top: 1px solid #00ff00; border-bottom: 1px solid #00ff00; padding-right: 0.4em; padding-left: 0.4em; padding-top: 0.4em; padding-bottom: 0.2em; }
+            .footnotetitle      { display: block; font-size: 120%; border-top: 2px double #00ff00; padding-top: 0.3em; padding-right: 0.4em; padding-left: 0.4em; text-align: center; }
+            div.footnotesnp p   { padding-right: 0.4em; padding-left: 0.4em; }
+            span.page   { display: inline-block; border-top: 1px solid #00ff00; text-align: center; width: 100%; margin: 1em 0 0; font-style: italic; font-size: 80%; }
             p.normal-nyj        { text-align: left; }
             p.epig      { text-align: left; font-size: 80%; margin-top: 1em; }
             p.epig1     { text-align: left; font-size: 80%; margin-left: 8.5em; }
