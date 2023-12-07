@@ -1,0 +1,574 @@
+body {
+    /*background: #fefefe;
+    color: #000050;*/
+    SCROLLBAR-FACE-COLOR: #eeeeee;
+    SCROLLBAR-HIGHLIGHT-COLOR: #eeeeee;
+    SCROLLBAR-SHADOW-COLOR: #eeeeee;
+    SCROLLBAR-3DLIGHT-COLOR: #999999;
+    SCROLLBAR-ARROW-COLOR: #222269;
+    SCROLLBAR-DARKSHADOW-COLOR: #999999;
+    SCROLLBAR-BASE-COLOR: #999999;
+}
+
+/*** FT lists' styles ***/
+.FTsnp {
+    background-color: #F5F5F9;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000055;
+    font-size: 80%;
+    font-style: normal;
+    font-family: Arial, helvetica;
+}
+
+.FT-note {
+    color: #000055;
+    margin-left: 20px;
+}
+
+.FTtitle {
+    display: block;
+    font-size: 100%;
+    border-top: 1px solid #999999;
+    padding-top: 0.3em;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    text-align: left;
+}
+
+.FTpage {
+    border-bottom: 1px solid #999999;
+    font-size: 80%;
+    font-style: italic;
+    padding-top: 0.5em;
+    padding-left: 0.1em;
+    margin-top: 0.3em;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+}
+
+.FT-item {
+    color: #000055;
+}
+
+.FT-copyr {
+    text-align: right;
+    font-style: italic;
+    color: #7E7E7E;
+}
+
+/*** footnotes' styles ***/
+.footnotesnp {
+    background-color: #F5F5F9;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000055;
+    font-size: 80%;
+    /* ++Pollex: see DIV.FOOTNOTES */
+}
+
+.page-note {
+    font-size: 100%;
+    /* ++Pollex */
+    font-style: italic;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #E0E0E0;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    padding-top: 0.4em;
+    padding-bottom: 0.2em;
+}
+
+.footnotetitle {
+    display: block;
+    font-size: 120%;
+    border-top: 2px double #999999;
+    padding-top: 0.3em;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    text-align: center;
+}
+
+.footnotepage {
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #EAEAEA;
+    font-size: 100%;
+    font-style: italic;
+    padding-top: 0.5em;
+    padding-left: 0.1em;
+    margin-top: 0.3em;
+    background-color: #F0F0F0;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+}
+
+/* ++Pollex:
+.text-sn, .tekst-snoski, .snoska-bks, .wn12, .p {
+*/
+DIV.footnotesnp p {
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    xfont-size: 80%;
+}
+
+/*.stih-snd, .stich-cnos {
+	font-size: 80%;
+}*/
+.lfdesc {
+    font-family: Tahoma, Verdana, Arial, helvetica;
+    font-size: 11px;
+}
+
+SPAN.page {
+    display: inline-block;
+    border-top: 1px solid #c1c1c1;
+    color: darkblue;
+    text-align: center;
+    width: 100%;
+    margin: 1em 0 0;
+    font-style: italic;
+    font-size: 80%;
+}
+
+A {
+    COLOR: #333333;
+    TEXT-DECORATION: underline;
+}
+
+/*a:active, */
+a:visited {
+    color: #3973C5;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #6F2222;
+    text-decoration: underline;
+}
+
+/*  -- End of altered styles -- */
+
+BODY,
+PRE.verse {
+    font-family: "Times New Roman";
+}
+
+SPAN.old {
+    font-family: "Palatino Linotype"
+}
+
+SPAN.oldrus {
+    font-family: "Code2000"
+}
+
+DIV#PROSE {
+    xwidth: 40em;
+    text-align: justify;
+}
+
+DIV#PROSEV,
+DIV#VERSE,
+DIV#DRAMA {
+    width: 35em;
+    text-align: left;
+}
+
+DIV.DESCRIPTION {
+    display: none;
+    font-size: 80%;
+    border-bottom: 8px double darkblue;
+    background-color: lightblue;
+}
+
+DIV.FOOTNOTES {
+    xdisplay: none;
+    xfont-size: 90%;
+}
+
+H4,
+H5 {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+}
+
+EM {
+    font-style: normal;
+    letter-spacing: 0.2em;
+}
+
+I EM {
+    font-style: italic;
+    letter-spacing: 0.2em;
+}
+
+A.footnote {
+    vertical-align: super;
+    font-size: 90%;
+}
+
+P {
+    margin: 0.2em 0;
+}
+
+P.p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+P.verse {
+    margin: 0;
+    margin-left: 6em;
+}
+
+PRE.verse {
+    margin-left: 6em;
+    font-size: 100%;
+}
+
+xSPAN.verseno {
+    position: relative;
+    left: -6em;
+}
+
+SPAN.verseno {
+    position: absolute;
+    left: 1em;
+    margin: 0;
+    font-size: 80%;
+    width: 3em;
+    text-align: right;
+}
+
+TD {
+    vertical-align: top;
+}
+
+P.ACT {
+    margin-top: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+P.SCENE {
+    margin-top: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+P.SPEECH {
+    margin-top: 1em;
+    text-align: center;
+    font: normal;
+    letter-spacing: 0.2em;
+}
+
+SPAN.SPEECH1 {
+    letter-spacing: 0.2em;
+    display: inline;
+}
+
+P.Note-c0,
+P.Note1 {
+    text-align: center;
+    font-size: 80%;
+}
+
+P.Note-ci,
+P.Note2 {
+    text-align: center;
+    font-style: italic;
+}
+
+P.Note-li0,
+P.Note3 {
+    text-align: left;
+    font-style: italic;
+    font-size: 80%;
+}
+
+P.Note-ci0,
+P.Note4 {
+    text-align: center;
+    font-style: italic;
+    font-size: 80%;
+}
+
+SPAN.Note-i,
+SPAN.Note5 {
+    letter-spacing: 0;
+    font-style: italic;
+}
+
+P.Note-r0,
+P.Note6 {
+    text-align: right;
+    font-size: 80%;
+}
+
+P.Note-ri0,
+P.Note7 {
+    text-align: right;
+    font-style: italic;
+    font-size: 80%;
+}
+
+P.Note-c,
+P.Note8 {
+    text-align: center;
+}
+
+P.Note-ri,
+P.Note9 {
+    text-align: right;
+    font-style: italic;
+}
+
+P.Note-l0,
+P.Note10 {
+    text-align: left;
+    font-size: 80%;
+}
+
+P.Note-li,
+P.Note11 {
+    text-align: left;
+    font-style: italic;
+}
+
+/* common styles */
+.cb {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cb2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.ci {
+    text-align: center;
+    font-style: italic;
+}
+
+.ci0 {
+    text-align: center;
+    font-style: italic;
+    font-size: 80%;
+}
+
+.c0 {
+    text-align: center;
+    font-size: 80%;
+}
+
+.cbi {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.ce {
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+.ri {
+    text-align: right;
+    font-style: italic;
+}
+
+.ri0 {
+    text-align: right;
+    font-style: italic;
+    font-size: 80%;
+}
+
+.r0 {
+    text-align: right;
+    font-size: 80%;
+}
+
+.li {
+    text-align: left;
+    font-style: italic;
+}
+
+.li0 {
+    text-align: left;
+    font-style: italic;
+    font-size: 80%;
+}
+
+.l0 {
+    text-align: left;
+    font-size: 80%;
+}
+
+.verse0 {
+    margin: 0;
+    margin-left: 6em;
+}
+
+.verse1,
+.verse-1 {
+    margin: 0;
+    margin-left: 8em;
+}
+
+.verse2,
+.verse-2 {
+    margin: 0;
+    margin-left: 10em;
+}
+
+.verse3,
+.verse-3 {
+    margin: 0;
+    margin-left: 12em;
+}
+
+.verse4,
+.verse-4 {
+    margin: 0;
+    margin-left: 14em;
+}
+
+.verse5,
+.verse-5 {
+    margin: 0;
+    margin-left: 16em;
+}
+
+.verse6,
+.verse-6 {
+    margin: 0;
+    margin-left: 18em;
+}
+
+.verse-7 {
+    margin: 0;
+    margin-left: 20em;
+}
+
+.verse-8 {
+    margin: 0;
+    margin-left: 22em;
+}
+
+.verse-9 {
+    margin: 0;
+    margin-left: 24em;
+}
+
+.verse-10 {
+    margin: 0;
+    margin-left: 26em;
+}
+
+/* Yandex */
+TABLE.YxHiLite {
+    background: #f5dcb3 url(/feb/common/images/ybgrnd.gif);
+    font-family: "Arial";
+    font-size: x-small;
+}
+
+TABLE.YxHiLite1 {
+    background: #f5dcb3 url(/feb/common/images/ybgrnd.gif);
+}
+
+/* Description .htm1 */
+.desc {
+    margin-top: 1em;
+    xtext-align: justify;
+}
+
+.desc1 {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.desc2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+
+/* SAPE STYLING */
+/* .ad-text { margin:40px 0 0 0; opacity:0.9; 
+  border-top:1px dashed #ddd;
+}
+
+was: background: url(/feb/common/ad1.png)
+*/
+.ad-text {
+    margin: 30px 0 0 0;
+    padding: 8px 8px 8px 8px;
+    line-height: 1px;
+    position: relative;
+    text-align: center;
+    font-family: Tahoma, Verdana, Arial, helvetica;
+    font-size: 11px;
+    min-height: 90px;
+    zoom: 1;
+    background: #f5f5f5 left center no-repeat;
+    /* 2018.02.06 AA */
+    display: none;
+}
+
+.ad-text.top {
+    margin: 10px 0 25px 0;
+}
+
+.ad-text div {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+}
+
+.ad-text>div {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.ad-text div.hr {
+    display: block;
+    height: 10px;
+    line-height: 10px;
+}
+
+.sapetext {
+    display: block;
+    clear: both;
+    min-height: 1px;
+    margin: 5 0 5px 0 !important;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', Arial, serif;
+}
+
+.googleadtext {
+    clear: both;
+    margin: 10px auto 0 auto;
+    text-align: center;
+}
+
+.yandexadtext {
+    clear: both;
+    margin: 10px auto 0 auto;
+    text-align: center;
+}
+
+.yandexadtext div {
+    width: 350px !important;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 !important;
+}
